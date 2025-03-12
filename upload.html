@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image - Code Catalyst</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ff4500;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        input[type="file"] {
+            font-size: 1.2em;
+        }
+
+        input[type="submit"] {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #008080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005f5f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Image for Detection</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <br><br>
+        <input type="submit" value="Upload" />
+    </form>
+</body>
+</html>
